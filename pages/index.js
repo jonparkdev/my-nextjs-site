@@ -1,88 +1,123 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Typed from 'typed.js'
+import { SocialIcon } from 'react-social-icons';
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+const Home = () => {
 
-    <Nav />
+  useEffect(() => {
+    const options = {
+      strings: ['Well...^1000 here it is,', 'Welcome to my site'],
+      typeSpeed: 40,
+      backSpeed: 20,
+    }
+    const typed = new Typed('#typed-header', options)
 
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+    return () => {
+        typed.destroy();
+    }
+  })
 
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
+  const socialStyles= {
+    margin: '8px'
+  }
+
+  return (
+      <div className="container">
+        <div className="home">
+          <div className="typed-container">
+            <span id='typed-header'/>
+          </div>
+          <div className="social-links">
+             <SocialIcon
+                url="https://www.linkedin.com/in/jon-c-park/"
+                style={socialStyles}
+              />
+             <SocialIcon
+                url="https://github.com/jonparkdev"
+                bgColor="black"
+                style={socialStyles}
+              />
+             <SocialIcon
+                url="mailto:jon@jonathanpark.ca"
+                bgColor="rgb(203, 33, 40)"
+                style={socialStyles}
+              />
+             <SocialIcon
+                url="https://www.instagram.com/jonparkmuaythai"
+                bgColor="#fcb045"
+                style={socialStyles}
+              />
+          </div>
+          <div className="about-me">
+            Aspiring Programmer, Philosopher and Mathematician
+          </div>
+        </div>
+        <style jsx>
+        {`
+          .container {
+            height:100%;
+            display: flex;
+            justify-content: center;
+          }
+          .home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            margin-bottom: 108px;
+            width: 100%;
+          }
+          .typed-container {
+            font-size: 88px;
+            min-width: 960px;
+            margin-bottom: 8px;
+            text-align: center;
+          }
+          .social-links {
+            display: flex;
+          }
+          .about-me {
+            font-size:24px;
+            max-width: 768px;
+            margin: 8px; auto;
+          }
+
+          @media (max-width: 991px){
+              .typed-container {
+                font-size: 72px;
+                min-width: 720px;
+              }
+          }
+          @media (max-width: 768px){
+              .typed-container {
+                  font-size: 60px;
+              }
+              .about-me{
+                  text-align: center;
+              }
+          }
+
+          @media (max-width: 576px){
+              .typed-container {
+                  font-size: 36px;
+              }
+              .about-me{
+                  text-align: center;
+                  font-size: 20px;
+              }
+              .home {
+                  margin-bottom: 64px;
+                  padding: 8px;
+              }
+          }
+        `}
+        </style>
       </div>
-    </div>
+  )
+}
 
-    <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
-        text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
-      }
-      .card:hover {
-        border-color: #067df7;
-      }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
-      }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
-      }
-    `}</style>
-  </div>
-)
+
 
 export default Home
