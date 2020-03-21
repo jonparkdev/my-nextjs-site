@@ -1,10 +1,17 @@
 import matter from 'gray-matter'
-
+import Head from 'next/head'
 import BlogList from "../../components/BlogComponents/BlogList";
+import { blogIndex } from "../../components/meta-descriptions"
+
+import { getSlug } from '../../utils/utils'
 
 const Index = (props) => {
-  console.log(props.allBlogs)
   return (
+    <>
+      <Head>
+        <title>Jonathan Park Blog</title>
+        <meta name="description" content={blogIndex} />
+      </Head>
       <section className="container blog">
         <h1 className="list-header"> Posts </h1>
         <BlogList allBlogs={props.allBlogs}/>
@@ -21,6 +28,7 @@ const Index = (props) => {
         `}
         </style>
       </section>
+    </>
   );
 };
 
@@ -34,20 +42,19 @@ Index.getInitialProps = async function() {
     const values = keys.map(context);
     const data = keys.map((key, index) => {
       // Create slug from filename
-      const slug = key
-        .replace(/^.*[\\\/]/, "")
-        .split(".")
-        .slice(0, -1)
-        .join(".");
+      const slug = getSlug(key);
       const value = values[index];
       // Parse yaml metadata & markdownbody in document
       const document = matter(value.default);
       return {
+        date: new Date(document.data.date),
         document,
         slug
       };
     });
-    return data;
+    // order so that newest is first item in the Array
+    // IMPORTANT -> Different than how its implemented in [pid].js
+    return data.sort((a,b) => b.date - a.date);
   })(require.context("../../posts", true, /\.md$/));
 
   return {

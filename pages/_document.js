@@ -202,6 +202,8 @@ class MyDocument extends Document {
                 .blog-post .body h6,
                 .blog-post .body p,
                 .blog-post .body blockquote,
+                .blog-post .body ul,
+                .blog-post .body ol,
                 .katex-display {
                   margin-top: 2em;
                   margin-bottom: -.5em;

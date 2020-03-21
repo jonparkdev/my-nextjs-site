@@ -27,7 +27,7 @@ const BlogList = (props) => {
                 <h2>{post.document.data.title}</h2>
                 <h3> {reformatDate(post.document.data.date)}</h3>
                 <div className='description'>
-                  <ReactMarkdown source={truncateSummary(post.document.content)} />
+                  <p>{post.document.data.description}</p>
                 </div>
               </div>
             </li>
@@ -47,6 +47,9 @@ const BlogList = (props) => {
           a:hover li .blog-info h2, a:hover li .blog-info h3, a:hover li .blog-info div {
             transform: translateX(10px);
             transition: transform 0.5s ease-out;
+          }
+          a:hover li .blog-info h2 {
+            color: #2a7ae2;
           }
           .blog-info {
             display: flex;
@@ -69,6 +72,7 @@ const BlogList = (props) => {
             color: #a0a0a0;
           }
           .blog-info .description {
+            font-size: 12px;
             max-width: 900px;
             margin: 0;
           }
@@ -94,6 +98,10 @@ const BlogList = (props) => {
 
             .blog__info {
               min-width: 70%;
+            }
+
+            .blog-info .description {
+              font-size: 16px;
             }
           }
           @media (min-width: 1280px) {

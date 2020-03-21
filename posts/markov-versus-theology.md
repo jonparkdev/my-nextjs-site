@@ -1,8 +1,7 @@
 ---
-layout: post
 title:  "Markov Versus Theology"
-date:   2019-07-19 11:08:20 -0400
-
+description: "Did you know one of the building blocks of the machine learning revolution was conceived within a heated theological debate?"
+date:   "2019-07-19"
 ---
 
 "Assuming all things independent.'' A statement any mathematician would be reminded of in their introductory probability and statistics class.  At first glance,  this statement would usher in a sigh of relief to any student knowing that they would not have to deal with conditional probabilities.  But hidden behind this idea of independence lies a philosophical debate that would be won with a mathematical argument.  This reasoning led to the discovery of what contemporaries now know as the study of Markov Chains.
@@ -27,7 +26,7 @@ $$
 T = \left[ \begin{array}{rr} a_{11} & a_{12} \\ a_{21} & a_{22} \end{array} \right]
 $$
 
-T is called the transition matrix where each element represents the transition probability from one state to the next.  For example, in Markov's experiment there were two states; either being in the state of a vowel or the state of a consonant. This system would be represented by a $$ 2\times 2$$ matrix where $$a_{11}$$ represents the transition from vowel to vowel, $$ a_{12} $$ represents a transition from vowel to consonant, and so on. To generalize, each $$ a_{ij} $$ represents the transition probability from state i to state j such $$ 0 < a_{ij} < 1 $$.
+T is called the transition matrix where each element represents the transition probability from one state to the next.  For example, in Markov's experiment there were two states; either being in the state of a vowel or the state of a consonant. This system would be represented by a $$2\times 2$$ matrix where $$a_{11}$$ represents the transition from vowel to vowel, $$a_{12}$$ represents a transition from vowel to consonant, and so on. To generalize, each $$a_{ij}$$ represents the transition probability from state i to state j such $$0 < a_{ij} < 1$$.
 
 This method can be applied to the Leslie model of population growth.  A Leslie matrix can be represented as,
 
@@ -35,7 +34,7 @@ $$
 T = \left[ \begin{array}{rrr} a_{x} & a_{y} & a_{z} \\ 1 - a_{x} & 0 & 0 \\ 0 & 1-a_{y} & 1-a_{z}\end{array} \right]
 $$
 
-In the above matrix, x, y and z represent different age groups of a population - mice for example - where x is the group of baby mice, y is the group middle age mice and z is the group of old age mice. $$ a_x, a_y $$ and $$a_z$$ are the death rates and the complements are the birth rates.  There is also a population vector which is represented as,
+In the above matrix, x, y and z represent different age groups of a population - mice for example - where x is the group of baby mice, y is the group middle age mice and z is the group of old age mice. $$a_x, a_y$$ and $$a_z$$ are the death rates and the complements are the birth rates.  There is also a population vector which is represented as,
 
 $$
 v(k) = \left[ \begin{array}{r} x(k) \\ y(k)\\ z(k) \end{array} \right]
@@ -47,4 +46,4 @@ $$
 v(k+1) = T \cdot v(k)
 $$
 
-The death and birth of the population from $$v(k)$$ to $$v(k+1)$$ depends upon the initial state $$ v(k)$$.  But according to Markov and his work on the inclusion of dependent events in the law of large numbers, the population vector v(k) will eventually converge to something called the steady state vector. But this would happen after numerous state transitions.  Given enough transitions into the future states, the model does not depend on the initial state. For example, let's say the model converges after 25 years.  To find the steady state vector, solve for the eigenvalues of matrix $$T$$ and then diagonalize to solve for the eigenvalues of $$T^{25}$$.  This will give us the corresponding eigenvector that represents the proportions of our different groups of population in our system.
+The death and birth of the population from $$v(k)$$ to $$v(k+1)$$ depends upon the initial state $$v(k)$$.  But according to Markov and his work on the inclusion of dependent events in the law of large numbers, the population vector $$v(k)$$ will eventually converge to something called the steady state vector. But this would happen after numerous state transitions.  Given enough transitions into the future states, the model does not depend on the initial state. For example, let's say the model converges after 25 years.  To find the steady state vector, solve for the eigenvalues of matrix $$T$$ and then diagonalize to solve for the eigenvalues of $$T^{25}$$.  This will give us the corresponding eigenvector that represents the proportions of our different groups of population in our system.
