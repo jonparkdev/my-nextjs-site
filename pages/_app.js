@@ -18,7 +18,7 @@ class MyApp extends App {
     if (process.env.NODE_ENV === 'production') {
       Fathom.load();
       Fathom.setSiteId('VLHUFYGD');
-      Fathom.trackPageView();
+      Fathom.trackPageview();
     }
   }
 
