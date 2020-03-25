@@ -4,8 +4,7 @@ import { useRouter } from 'next/router'
 const SwitchPost = props => {
   const { index, posts } = props
   const router = useRouter()
-  console.log(posts)
-  console.log(index)
+  
   let previous = false;
   let next = false;
   if(index === 0) {

@@ -105,7 +105,7 @@ BlogPost.getInitialProps = async (context) => {
    });
    // sort so that the newest is the last index in Array
    return data.sort((a,b) => a.date - b.date);
- })(require.context("../../posts", true, /\.md$/));
+ })(require.context("../../public/posts", true, /\.md$/));
   const postList = posts.map(post => post.slug)
   const index = postList.indexOf(pid)
   const frontmatter = posts[index].document.data
@@ -122,7 +122,7 @@ BlogPost.getInitialProps = async (context) => {
   let bibliographyRaw;
   try {
     // get raw json
-    bibliographyRaw = await import(`../../posts/bibliographies/${pid}.json`)
+    bibliographyRaw = await import(`../../public/posts/bibliographies/${pid}.json`)
   } catch(error) {
     return { ...blogPostProps }
   }

@@ -1,3 +1,4 @@
+import React from 'react'
 import matter from 'gray-matter'
 import Head from 'next/head'
 import BlogList from "../../components/BlogComponents/BlogList";
@@ -34,9 +35,9 @@ const Index = (props) => {
 
 export default Index;
 
-Index.getInitialProps = async function() {
-   //get posts & context from folder
-   const posts = (context => {
+Index.getInitialProps = async () => {
+  // get posts & context from folder
+  const posts = (context => {
 
     const keys = context.keys();
     const values = keys.map(context);
@@ -55,7 +56,7 @@ Index.getInitialProps = async function() {
     // order so that newest is first item in the Array
     // IMPORTANT -> Different than how its implemented in [pid].js
     return data.sort((a,b) => b.date - a.date);
-  })(require.context("../../posts", true, /\.md$/));
+  })(require.context('../../public/posts', true, /\.md$/));
 
   return {
     allBlogs: posts,
