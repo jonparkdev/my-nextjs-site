@@ -102,6 +102,7 @@ const Home = () => {
           @media (max-width: 576px){
               .typed-container {
                   font-size: 36px;
+                  margin-bottom: 16px;
               }
               .about-me{
                   text-align: center;
