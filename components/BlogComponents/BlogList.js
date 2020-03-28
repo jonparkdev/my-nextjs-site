@@ -53,6 +53,8 @@ const BlogList = (props) => {
           }
           .blog-info {
             display: flex;
+            max-width: 900px;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             padding: 16px 8px;
