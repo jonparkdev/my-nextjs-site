@@ -11,12 +11,11 @@
     "@matejmazur/react-katex": "^3.0.2",
     "@mdx-js/loader": "^1.5.7",
     "@next/mdx": "^9.3.0",
-    "@zeit/next-css": "^1.0.1",
     "citation-js": "^0.5.0-alpha.5",
     "fathom-client": "^2.0.2",
     "gray-matter": "^4.0.2",
     "katex": "^0.11.1",
-    "next": "9.2.1",
+    "next": "^9.3.2",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "raw-loader": "^4.0.0",
@@ -34,9 +33,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
-    "postcss-normalize": "^8.0.1",
     "react-social-icons": "^4.1.0",
     "webpack": "^4.41.6"
-  },
-  "browserslist": "last 2 versions"
+  }
 }
