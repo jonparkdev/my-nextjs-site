@@ -17,7 +17,7 @@ It wasn't always like this.  Not to long ago, people had to schedule things by m
 - I don't touch any technology first thing in the morning
 - I only check my notifications after my morning routine is done and a little later in the afternoon
 - My phone goes away after 8pm and sometimes right after work if my mind is cluttered
-- I try my best to avoid screens late at night to practice sleep hygiene 
+- I try my best to avoid screens late at night to practice sleep hygiene
 
 These are small little changes that have had profound impacts.  I am more focused and more disciplined then ever before as I have less distractions pulling me off the path that I want to travel.  I am less stressed out and I have turned sitting with that discomfort that we all get from time to time into productivity.   
 
@@ -25,5 +25,4 @@ The argument and criticism I mainly get is in the form of a question; If that's 
 
 It may seem like I am trying to escape technology but I am not.  I use technology to make my life better according to the desiderata I have set out for myself.  I still use good'ol fashion email as it's an important part of my work, as I am sure I am not the only one.  In terms of social media, I have Facebook which I rarely use and somehow have rationalised that its important because I can use it to keep in touch with people... but that argument becomes weaker as time goes on.  I have messenger (Facebook Messenger)  which is a reminiscence of a past business/club I use to run (Muay Thai for those who know me).  I try to check that once every couple days because I do stay in touch with people.  I would like to note that this is all done on my desktop computer so I do not get notifications on my phone.
 
-This post is somewhat all over the place so I'll stop there and sum up what I am trying to say.   In terms of the dispute I mentioned earlier, I don't mean to sound flippant but I am irritated that I have been expected to be available immediately at a moments notice because of this ridiculous norm.  In a world that becomes more and more distracted, I believe it's a virtue to set boundaries that prioritise focus and mindfulness as the rewards propagate much further then just yourself.   Don't let someone tell you otherwise. 
-
+This post is somewhat all over the place so I'll stop there and sum up what I am trying to say.   In terms of the dispute I mentioned earlier, I don't mean to sound flippant but I am irritated that I have been expected to be available immediately at a moments notice because of this ridiculous norm.  In a world that becomes more and more distracted, I believe it's a virtue to set boundaries that prioritise focus and mindfulness as the rewards propagate much further then just yourself.   Don't let someone tell you otherwise.
