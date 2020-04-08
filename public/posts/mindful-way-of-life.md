@@ -1,12 +1,8 @@
 ---
-​---
 title:  "My Mindful Way of Life"
 description: "Aren't you available?"
 date:   "2020-04-03"
-​---
 ---
-
-
 
 I try to live an undistracted way of life.  What does this involve? I don't have any social media other than email on my phone. I turn off all my notification so that my attention isn't constantly being taken away from whatever I am doing at that time.  When I am doing work, my phone is somewhere out of reach and when I sleep, my phone is in another room.  Some of the reasons to why I do this are apparent but I will elaborate to best explain how I feel.  First, why am I writing this?
 
