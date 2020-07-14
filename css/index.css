@@ -2,35 +2,23 @@
 @import './responsive.css';
 
 @font-face {
-    font-family: 'latoregular';
-    src: url('/fonts/lato-regular-webfont.eot');
-    src: url('/fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/lato-regular-webfont.woff2') format('woff2'),
-         url('/fonts/lato-regular-webfont.woff') format('woff'),
-         url('/fonts/lato-regular-webfont.ttf') format('truetype'),
-         url('/fonts/lato-regular-webfont.svg#latoregular') format('svg');
-    font-weight: lighter;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'latohairline';
-    src: url('/fonts/lato-thin-webfont.eot');
-    src: url('/fonts/lato-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/lato-thin-webfont.woff2') format('woff2'),
-         url('/fonts/lato-thin-webfont.woff') format('woff'),
-         url('/fonts/lato-thin-webfont.ttf') format('truetype'),
-         url('/fonts/lato-thin-webfont.svg#latohairline') format('svg');
+    font-family: 'cmu_serifroman';
+    src: url('/fonts/cmunrm-webfont.eot');
+    src: url('/fonts/cmunrm-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/cmunrm-webfont.woff2') format('woff2'),
+         url('/fonts/cmunrm-webfont.woff') format('woff'),
+         url('/fonts/cmunrm-webfont.ttf') format('truetype'),
+         url('/fonts/cmunrm-webfont.svg#cmu_serifroman') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 /*********************GLOBAL STYLES******************************/
 * {
   box-sizing: inherit;
-  font-family: 'latohairline', serif;
-  font-weight:bold;
+  font-family: 'cmu_serifroman', serif;
+  font-weight: normal;
 }
 html {
 box-sizing: border-box;
@@ -163,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-font-family: 'latohairline', serif;
+font-family: 'cmu_serifroman', serif;
 font-weight: bold;
 margin-left: 0;
 margin-right: 0;
@@ -201,8 +189,8 @@ line-height: 1.1875;
 }
 
 p {
-font-family: 'latoregular', serif;
-font-weight: lighter;
+font-family: 'cmu_serifroman', serif;
+font-weight: normal;
 font-size: 20px;
 letter-spacing: -0.1px;
 line-height: 1.58;
