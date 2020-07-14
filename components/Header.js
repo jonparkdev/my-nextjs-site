@@ -6,9 +6,11 @@ const Header = () => {
     return (
         <div className="header container">
             <Link href='/'>
-              <a className='nav-title'>
-                Jonathan
-                <span className="last-name"> Park </span>
+              <a>
+                <h1 className='nav-title'>
+                  Jonathan
+                  <span className="last-name"> Park </span>
+                </h1>
               </a>
             </Link>
             <div className="navigation">
@@ -36,19 +38,24 @@ const Header = () => {
               text-decoration: none;
               margin: 0;
               padding: 8px 0;
-              font-size: 40px;
+              font-size: 32px;
               line-height: 88px;
+              font-weight: normal;
             }
             .nav-item {
-              font-weight: bold;
+              font-weight: normal;
               color: black;
               text-decoration: none;
-              font-size: 32px;
+              font-size: 24px;
               padding: 24px 8px 8px 8px;
             }
             @media (max-width: 576px) {
                 .last-name {
                     display: none;
+                }
+
+                .nav-item {
+                    font-size: 20px;
                 }
             }
             `}
