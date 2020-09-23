@@ -1,11 +1,11 @@
-import App from 'next/app'
-import React, { useEffect } from 'react'
-import * as Fathom from 'fathom-client'
-import Router from 'next/router'
+import App from 'next/app';
+import React, { useEffect } from 'react';
+import * as Fathom from 'fathom-client';
+import Router from 'next/router';
 
-import '../css/index.css'
+import '../css/index.css';
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 // Records a pageview when route changes
 Router.events.on('routeChangeComplete', () => {
@@ -28,8 +28,8 @@ class MyApp extends App {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    )
+    );
   }
 }
 
-export default MyApp
+export default MyApp;
