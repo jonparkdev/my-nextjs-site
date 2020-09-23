@@ -1,6 +1,3 @@
-@import './normalize.css';
-@import './responsive.css';
-
 @font-face {
     font-family: 'cmu_serifroman';
     src: url('/fonts/cmunrm-webfont.eot');

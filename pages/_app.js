@@ -4,6 +4,8 @@ import * as Fathom from 'fathom-client';
 import Router from 'next/router';
 
 import '../css/index.css';
+import '../css/normalize.css';
+import '../css/responsive.css';
 
 import Layout from '../components/Layout';
 
